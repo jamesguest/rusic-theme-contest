@@ -47,7 +47,8 @@
     <!-- Header -->
     <header id="header">
         <div class="container">
-            <h1><a href="{{space.permalink}}" title="link to {{space.title}}">Full English Breakfast</a></h1>  
+            <h1><a href="{{space.permalink}}" title="link to {{space.title}}">Full English Breakfast</a></h1>
+            <h2 class="description">{{space.summary}}</h2>
             <!-- THIS NEEDS TO BE REPLACED WITH THE NEW COUNTDOWN -->
             {% if space.expires_at %}
               <div id="timer">
