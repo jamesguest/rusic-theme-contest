@@ -1,7 +1,7 @@
 {% if env == "development" %}
-  {% assign asset_url="http://localhost:8080" %}
+  {% assign asset_url="http://files.jamesguest.co.uk/feb/" %}
 {% else %}
-  {% assign asset_url="https://s3.amazonaws.com/rusic-contest-theme" %}
+  {% assign asset_url="http://files.jamesguest.co.uk/feb/" %}
 {% endif %}
 <!doctype html>
     <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
@@ -47,7 +47,7 @@
     <!-- Header -->
     <header id="header">
         <div class="container">
-            <h1><a href="{{space.permalink}}" title="link to {{space.title}}">{{space.title}}</a></h1>  
+            <h1><a href="{{space.permalink}}" title="link to {{space.title}}">Full English Breakfast</a></h1>  
             <!-- THIS NEEDS TO BE REPLACED WITH THE NEW COUNTDOWN -->
             {% if space.expires_at %}
               <div id="timer">
