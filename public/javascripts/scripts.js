@@ -1,6 +1,12 @@
 $(document).ready(function(){
 
 	$('#new-entry').hide();
+	$('#add-entry').click(function() {
+		$('#new-entry').show('slow', function() {
+		// Animation complete.
+		$('#add-entry').hide();
+	  });
+	});
     
     $('.alert-message.error, .alert-message.warning, .alert-message.success').delay(2000).slideUp('slow');
 

@@ -89,8 +89,9 @@
                     <img src="{{current_user.image_url}}" title="Your avatar from {{user.provider}}" class="avatar" />
                     <span class="logged-in">Welcome back<br /> <strong>{{current_user.nickname}}</strong></span>
                     <a href="/auth/signout" title="Signout of {{space.title}}" class="btn">Logout</a>
-                    <a href="#" title="#" class="btn primary add  showbtn">+ Add new entry</a>
+                    <a id="add-entry" href="#" title="#" class="btn primary add  showbtn">+ Add a cafe</a>
                 </div>
+                
                 {% if idea %}
                  {{space.summary | markdown}}
                 {% endif %}
@@ -136,7 +137,6 @@
 
         {% if current_user %}
         <!-- Add new idea form -->
-        	<a id="add-entry" href="#">Add a cafe &raquo;</a>
             <div id="new-entry">
                 <h3>Add a new entry to {{space.title}}</h3>
                 <form id="entry_form" method="post" action="{{space.permalink}}/ideas" class="clearfix" enctype="multipart/form-data">
