@@ -96,7 +96,7 @@
                 {% endif %}
                 {% else %}
                 <div id="user-block">
-                    <p>to enter the contest, comment or like entries login with facebook or twitter</p>
+                    <p>to add, comment or like a cafe login with Facebook or Twitter</p>
 
                     <div class="alert-message tip">
                         <i></i>
@@ -136,6 +136,7 @@
 
         {% if current_user %}
         <!-- Add new idea form -->
+        	<a id="add-entry" href="#">Add a cafe &raquo;</a>
             <div id="new-entry">
                 <h3>Add a new entry to {{space.title}}</h3>
                 <form id="entry_form" method="post" action="{{space.permalink}}/ideas" class="clearfix" enctype="multipart/form-data">
